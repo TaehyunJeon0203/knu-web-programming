@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>계산기 만들기</title>
+    <style>
+      #screen {
+        width: 22em;
+        margin-bottom: 0.3em;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      td {
+        padding: 0.1em;
+      }
+      input[type=button] {
+        width: 5em;
+        height: 2em;
+      }
+    </style>
+</head>
+<body>
+<h3>계산기 만들기</h3>
+<hr>
+<input type="text" id="screen" value="0">
+<table>
+  <tr>
+    <td><input type="button" value="BACK" onclick="back()"></td>
+    <td><input type="button" value="CE" onclick="ce()"></td>
+    <td><input type="button" value="C" onclick="c()"></td>
+    <td><input type="button" value="=" onclick="equal()"></td>
+  </tr>
+  <tr>
+    <td><input type="button" value="7" onclick="put('7')"></td>
+    <td><input type="button" value="8" onclick="put('8')"></td>
+    <td><input type="button" value="9" onclick="put('9')"></td>
+    <td><input type="button" value="/" onclick="put('/')"></td>
+  </tr>
+  <tr>
+    <td><input type="button" value="4" onclick="put('4')"></td>
+    <td><input type="button" value="5" onclick="put('5')"></td>
+    <td><input type="button" value="6" onclick="put('6')"></td>
+    <td><input type="button" value="*" onclick="put('*')"></td>
+  </tr>
+  <tr>
+    <td><input type="button" value="1" onclick="put('1')"></td>
+    <td><input type="button" value="2" onclick="put('2')"></td>
+    <td><input type="button" value="3" onclick="put('3')"></td>
+    <td><input type="button" value="-" onclick="put('-')"></td>
+  </tr>
+  <tr>
+    <td><input type="button" value="0" onclick="put('0')"></td>
+    <td><input type="button" value="+" onclick="put('+')"></td>
+    <td><input type="button" value="NONE"></td>
+    <td><input type="button" value="NONE"></td>
+  </tr>
+</table>
+<script>
+  var screen = document.getElementById('screen');
+  function put(ch) {
+    if (screen.value === '0') screen.value = ch;
+    else screen.value += ch;
+  }
+  function back() {
+    screen.value = screen.value.slice(0, -1);
+    if (screen.value === '') screen.value = '0';
+  }
+  function ce() {
+    var v = screen.value;
+    var i = v.length - 1;
+    while (i >= 0 && '+-*/'.indexOf(v[i]) === -1) i--;
+    screen.value = v.substring(0, i + 1);
+    if (screen.value === '') screen.value = '0';
+  }
+  function c() {
+    screen.value = '0';
+  }
+  function equal() {
+    screen.value = eval(screen.value);
+  }
+</script>
+</body>
+</html>
