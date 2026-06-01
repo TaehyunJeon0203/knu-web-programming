@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>포스트잇</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 20px;
+      }
+      label {
+        display: inline-block;
+        margin-right: 4px;
+      }
+      #content {
+        display: block;
+        width: 300px;
+        height: 100px;
+        margin-top: 4px;
+      }
+      .buttons {
+        margin-top: 8px;
+      }
+    </style>
+</head>
+<body>
+<h3>포스트잇</h3>
+<hr>
+<div>
+  <label for="title">제목</label>
+  <input type="text" id="title">
+</div>
+<div>
+  <label>메모입력</label>
+  <textarea id="content"></textarea>
+</div>
+<div class="buttons">
+  <button id="saveBtn">저장</button>
+  <button id="viewBtn">보기</button>
+</div>
+<script>
+  document.getElementById('saveBtn').onclick = function () {
+    var title = document.getElementById('title').value;
+    var content = document.getElementById('content').value;
+    if (title === '') {
+      alert('제목을 입력하세요.');
+      return;
+    }
+    localStorage.setItem(title, content);
+    document.getElementById('title').value = '';
+    document.getElementById('content').value = '';
+  };
+
+  document.getElementById('viewBtn').onclick = function () {
+    window.open('prac_1_view.html', '_blank');
+  };
+</script>
+</body>
+</html>

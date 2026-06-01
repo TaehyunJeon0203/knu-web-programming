@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <title>onmousemove</title>
     <style>
+      html, body, * {
+        cursor: none !important;
+      }
       #cursor {
         position: absolute;
         width: 2em;
         pointer-events: none;
+        z-index: 9999;
       }
     </style>
 </head>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>포스트잇 출력</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 20px;
+      }
+      ol {
+        line-height: 1.8;
+      }
+      .title {
+        font-weight: bold;
+        margin-right: 8px;
+      }
+    </style>
+</head>
+<body>
+<h3>포스트잇 출력</h3>
+<hr>
+<ol id="list"></ol>
+<script>
+  var list = document.getElementById('list');
+  for (var i = 0; i < localStorage.length; i++) {
+    var key = localStorage.key(i);
+    var value = localStorage.getItem(key);
+    var li = document.createElement('li');
+    li.innerHTML = '<span class="title">' + key + '</span>' + value;
+    list.appendChild(li);
+  }
+</script>
+</body>
+</html>

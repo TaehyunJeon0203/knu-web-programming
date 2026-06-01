@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>갬블링 게임</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 20px;
+      }
+      #numbers {
+        display: inline-block;
+        border: 2px solid violet;
+        padding: 10px 20px;
+        margin-top: 10px;
+        background-color: #fdf5e6;
+      }
+      .num {
+        font-size: 3em;
+        font-weight: bold;
+        font-style: italic;
+        color: blue;
+        cursor: pointer;
+        margin: 0 6px;
+      }
+      #result {
+        margin-top: 10px;
+        font-style: italic;
+        color: violet;
+        cursor: pointer;
+      }
+    </style>
+</head>
+<body>
+<h3>갬블링 게임</h3>
+<p>각 숫자를 클릭하면 0에서 2사이의 난수로 바뀝니다. 모두 같은 수가 나오면 승리합니다.</p>
+<hr>
+<div id="numbers">
+  <span class="num">0</span>
+  <span class="num">0</span>
+  <span class="num">0</span>
+</div>
+<div id="result"></div>
+<script>
+  var nums = document.getElementsByClassName('num');
+  var result = document.getElementById('result');
+
+  function check() {
+    var a = nums[0].innerHTML;
+    var b = nums[1].innerHTML;
+    var c = nums[2].innerHTML;
+    if (a === b && b === c) {
+      result.innerHTML = 'Success(click here to do again)';
+    } else {
+      result.innerHTML = 'fail(click here to do again)';
+    }
+  }
+
+  function reset() {
+    for (var i = 0; i < nums.length; i++) {
+      nums[i].innerHTML = '0';
+    }
+    result.innerHTML = '';
+  }
+
+  for (var i = 0; i < nums.length; i++) {
+    nums[i].onclick = function () {
+      this.innerHTML = Math.floor(Math.random() * 3);
+      check();
+    };
+  }
+
+  result.onclick = reset;
+</script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1778482620971,
+  "lastScanned": 1780297489808,
   "projectRoot": "/Users/taehyunjeon/taehyun/dev/workspace_uni/knu-web-programming",
   "techStack": {
     "languages": [],
@@ -35,15 +35,15 @@
     "11": {
       "path": "11",
       "purpose": null,
-      "fileCount": 0,
-      "lastAccessed": 1778482620966,
+      "fileCount": 1,
+      "lastAccessed": 1780297489804,
       "keyFiles": []
     },
     "0316": {
       "path": "0316",
       "purpose": null,
       "fileCount": 7,
-      "lastAccessed": 1778482620966,
+      "lastAccessed": 1780297489803,
       "keyFiles": [
         "prac_0.html",
         "prac_1.html",
@@ -56,7 +56,7 @@
       "path": "0323",
       "purpose": null,
       "fileCount": 4,
-      "lastAccessed": 1778482620966,
+      "lastAccessed": 1780297489804,
       "keyFiles": [
         "prac_0.html",
         "prac_1.html",
@@ -68,7 +68,7 @@
       "path": "0324",
       "purpose": null,
       "fileCount": 3,
-      "lastAccessed": 1778482620966,
+      "lastAccessed": 1780297489804,
       "keyFiles": [
         "card1.jpg",
         "card2.webp",
@@ -78,15 +78,21 @@
     "week10": {
       "path": "week10",
       "purpose": null,
-      "fileCount": 0,
-      "lastAccessed": 1778482620967,
-      "keyFiles": []
+      "fileCount": 10,
+      "lastAccessed": 1780297489804,
+      "keyFiles": [
+        "apple.jpg",
+        "banana.jpg",
+        "mango.jpg",
+        "prac_1.html",
+        "prac_2.html"
+      ]
     },
     "week4": {
       "path": "week4",
       "purpose": null,
       "fileCount": 14,
-      "lastAccessed": 1778482620967,
+      "lastAccessed": 1780297489804,
       "keyFiles": [
         "_pro2-2.html",
         "card1.jpg",
@@ -99,7 +105,7 @@
       "path": "week5",
       "purpose": null,
       "fileCount": 10,
-      "lastAccessed": 1778482620967,
+      "lastAccessed": 1780297489804,
       "keyFiles": [
         "char.png",
         "prac_0.html",
@@ -112,7 +118,7 @@
       "path": "week6",
       "purpose": null,
       "fileCount": 7,
-      "lastAccessed": 1778482620967,
+      "lastAccessed": 1780297489804,
       "keyFiles": [
         "prac_0.html",
         "prac_1.html",
@@ -125,7 +131,7 @@
       "path": "week7",
       "purpose": null,
       "fileCount": 6,
-      "lastAccessed": 1778482620967,
+      "lastAccessed": 1780297489804,
       "keyFiles": [
         "prac_0.html",
         "prac_1.html",
@@ -138,7 +144,7 @@
       "path": "week9",
       "purpose": null,
       "fileCount": 11,
-      "lastAccessed": 1778482620967,
+      "lastAccessed": 1780297489804,
       "keyFiles": [
         "prac_0.html",
         "prac_1.html",
@@ -150,45 +156,39 @@
   },
   "hotPaths": [
     {
-      "path": "week9/prac_0.html",
+      "path": "",
       "accessCount": 1,
-      "lastAccessed": 1778482697077,
+      "lastAccessed": 1778565015205,
+      "type": "directory"
+    },
+    {
+      "path": "week10/prac_5.html",
+      "accessCount": 1,
+      "lastAccessed": 1780297552714,
       "type": "file"
     },
     {
-      "path": "week9/prac_1.html",
+      "path": "week13/prac_1.html",
       "accessCount": 1,
-      "lastAccessed": 1778482700475,
+      "lastAccessed": 1780297568662,
       "type": "file"
     },
     {
-      "path": "week9/prac_2.html",
+      "path": "week13/prac_1_view.html",
       "accessCount": 1,
-      "lastAccessed": 1778482700835,
+      "lastAccessed": 1780297573792,
       "type": "file"
     },
     {
-      "path": "week9/prac_3.html",
+      "path": "week13/prac_2.html",
       "accessCount": 1,
-      "lastAccessed": 1778482701673,
+      "lastAccessed": 1780297585502,
       "type": "file"
     },
     {
-      "path": "week9/prac_4.html",
+      "path": "week13/prac_3.html",
       "accessCount": 1,
-      "lastAccessed": 1778482701994,
-      "type": "file"
-    },
-    {
-      "path": "week9/prac_5.html",
-      "accessCount": 1,
-      "lastAccessed": 1778482702768,
-      "type": "file"
-    },
-    {
-      "path": "11/11-1/pro1_35p.html",
-      "accessCount": 1,
-      "lastAccessed": 1778482702999,
+      "lastAccessed": 1780297592791,
       "type": "file"
     }
   ],
